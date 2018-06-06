@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HomeWork 28.05</title>
+</head>
+<body>
+  <script>
+    const MENU = "##### FOOD #####\n" +
+                 "1. Pizza - 65lei\n" +
+                 "2. Salad - 5lei\n" +
+                 "3. Zeama - 25lei\n" +
+                 "##############";
+    var option = prompt( MENU );
+    var quantityPizza = 45;
+    var quantitySalad = 120;
+    var quantityZeama = 30;
+    if ( option == null ){
+      alert("If you're hungry, ask yourself :)");
+    } else{
+      if (( option == "1" ) || ( option == "Pizza" ) || ( option == "pizza" )) {
+        alert("You have choosen Pizza, they remained " + quantityPizza + " pieces.");
+        var quantity = prompt("How many pieces do you want?");
+        if ( quantity == null ) {
+          alert( MENU );
+        } else {
+            if ( quantity > quantityPizza ) {
+              alert("We apologize, but we do not have so many pieces.");
+            } else {
+              if ( quantity >= 8 ) {
+                alert("Great! The price is more than 500 lei so delivery is free! Thank you for your purchase! Have a nice day!")
+              } else {
+                alert("You choose " + quantity + " pieces. Delivery will cost 25 lei. Thank you for your purchase! Have a nice day!")
+              }
+            }
+        }
+      } else if (( option == "2" ) || (option == "Salad") || (option == "salad")) {
+        alert("You have choosen Salad, they remained " + quantitySalad + " pieces.");
+        var quantity = prompt("How many pieces do you want?");
+        if ( quantity == null ) {
+          alert( MENU );
+        } else {
+            if ( quantity > quantitySalad ) {
+              alert("We apologize, but we do not have so many pieces.");
+            } else {
+              if ( quantity >= 100 ) {
+                alert("Great! The price is more than 500 lei so delivery is free! Thank you for your purchase! Have a nice day!")
+              } else {
+                alert("You choose " + quantity + " pieces. Delivery will cost 25 lei. Thank you for your purchase! Have a nice day!")
+              }
+            }
+        }
+      } else if (( option == "3" ) || (option == "Zeama") || (option == "zeama")) {
+        alert("You have choosen Zeama, they remained " + quantityZeama + " pieces.");
+        var quantity = prompt("How many pieces do you want?");
+        if ( quantity == null ) {
+          alert( MENU );
+        } else {
+            if ( quantity > quantityZeama ) {
+              alert("We apologize, but we do not have so many pieces.");
+            } else {
+              if ( quantity >= 20 ) {
+                alert("Great! The price is more than 500 lei so delivery is free! Thank you for your purchase! Have a nice day!")
+              } else {
+                alert("You choose " + quantity + " pieces. Delivery will cost 25 lei. Thank you for your purchase! Have a nice day!")
+              }
+            }
+        }
+      } else {
+        alert("Please look carefully in the menu and choose what you want.");
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!-- 1) if+else -> 
+    "You have chosen "Pizza" "
+ 2) var quantity
+ 3) * prompt -> quantity -> total
+    * suma > 500 -> free delivery -->

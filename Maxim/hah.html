@@ -1,0 +1,56 @@
+<script type="text/javascript">
+  const MENU =
+  "##### FOOD #####\n"  +
+  "1. Pizza - 65 lei\n" +
+  "2. Salad - 5 lei\n"  +
+  "3. Zeama - 25 lei\n" +
+  "################";
+  const PPRICE = 65; //price
+  const SPRICE = 5;
+  const ZPRICE = 25;
+  var pizza = 10;1
+  var salad = 5;
+  var zeama = 0;
+  var option = prompt(MENU);
+
+  if ( option == 1 && pizza > 1){
+    var q = prompt('You choose "Pizza"('+pizza+' left)\nHow many:');
+      if ( q <= pizza ){
+        alert("Total: " + q * PPRICE + " lei");
+        if ( q * PPRICE > 200)
+        alert("Free delivery");
+      } else {
+        alert("Not enough Pizza");
+      }
+  } else if( option == 1 && pizza < 1) {
+    alert("Pizza out of stock\nChoose another one");
+    prompt(MENU);
+
+  } else if( option == 2 && salad > 1) {
+    var q = prompt("You choose Salad("+salad+" left)\nHow many:");
+      if ( q <= salad ){
+        alert("Total: "+ q * SPRICE + " lei");
+      } else {
+        alert("Not enough Salad");
+      }
+  } else if( option == 2 && salad < 1) {
+    alert("Salad out of stock\nChoose another one");
+    prompt(MENU);
+
+  } else if( option == 3 && zeama > 1) {
+    var q = prompt("You choose Zeama("+zeama+" left)\nHow many:");
+    if ( q <= zeama ){
+      alert("Total: "+ q * ZPRICE + " lei");
+    } else {
+      alert("Not enough Zeama");
+    }
+  } else if( option == 3 && zeama < 1) {
+    alert("Zeama out of stock\nChoose another one");
+    prompt(MENU);
+
+  } else {
+    alert("Try one more time");
+  }
+
+
+</script>
