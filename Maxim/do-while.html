@@ -1,0 +1,9 @@
+<script>
+  var pin;
+  var n = 1;
+  do{
+    pin = prompt("Your PIN?");
+    if(n>=3) break;  // 3 попытки
+    n++;
+  } while(pin != "1111");
+</script>
