@@ -1,0 +1,40 @@
+
+<script>
+  var slide_number = 2;
+
+  var slide_url_1  = "https://picsum.photos/600/400/?image=399";
+  var slide_url_2  = "https://picsum.photos/600/400/?image=393";
+  var slide_url_3  = "https://picsum.photos/600/400/?image=350";
+
+  function showButtons(){
+    document.write(`<hr>`);
+    document.write(`<button onclick="prev();">prev</button>`);
+    document.write(`<button onclick="next();">next</button>`);
+  }
+
+  function showSlide(){
+    switch (slide_number){
+      case 1:
+        document.write(`<img width="300" src="${slide_url_1}">`);
+      break;
+      case 2:
+        document.write(`<img width="300" src="${slide_url_2}">`);
+      break;
+      case 3:
+        document.write(`<img width="300" src="${slide_url_3}">`);
+      break;
+    }
+  }
+  function prev(){
+    slide_number--;
+    showSlide();
+  }
+  function next(){
+    slide_number++;
+    showSlide();
+  }
+  showSlide();
+  showButtons();
+
+
+</script>
