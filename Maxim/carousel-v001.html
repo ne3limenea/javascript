@@ -1,5 +1,5 @@
-
 <script>
+//if else
   var slide_number = 2;
 
   var slide_url_1  = "https://picsum.photos/600/400/?image=399";
@@ -15,15 +15,16 @@
   function showSlide(){
     switch (slide_number){
       case 1:
-        document.write(`<img width="300" src="${slide_url_1}">`);
+        url = slide_url_1;
       break;
       case 2:
-        document.write(`<img width="300" src="${slide_url_2}">`);
+        url = slide_url_2;
       break;
       case 3:
-        document.write(`<img width="300" src="${slide_url_3}">`);
+        url = slide_url_3;
       break;
     }
+    document.write(`<img width="300" src="${url}">`);
   }
   function prev(){
     slide_number--;

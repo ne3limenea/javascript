@@ -1,0 +1,54 @@
+<script>
+  // function f( value ){
+  //   console.log( value );
+  // }
+  // f(100);
+  // f(200);
+  // f(300);
+//////////////////////////////////////
+  // function f(){
+  //   return 1;
+  // }
+  // f(); // появится 1
+  // f() + f() + f()
+  // // 1 + f() + f()
+  // // 1 + 1 + f()
+  // // 2 + f()
+  // // 2+ 1
+  // // 3
+/////////////////////////////////////
+  // function f(a,b){
+  //   return a+b;
+  // }
+  // var r = f(40,f(10,f(20,30))) // 20+30 // 50+10 // 60+40 // 100
+  // console.log(r);
+////////////////////////////////////
+  // function a(){
+  //   console.log("STARTING  ---> A");
+  //   b();
+  //   console.log("FINISHING <--- A");
+  // }
+  // function b(){
+  //   console.log("STARTING  ---> B");
+  //   c();
+  //   console.log("FINISHING <--- B");
+  // }
+  // function c(){
+  //   console.log("STARTING  ---> C");
+  //   console.log("FINISHING <--- C");
+  // }
+  // a();
+  ///////////////////////////////////////////////
+  var name = "I am Global!";
+  function parent();{
+    var name = "I am Local!";
+    console.log(name); // i am local
+    function child(){
+      var name = "I am Mega Local!";
+      console.log(name);
+    }
+    child();   // i am mega local!   , undefined
+  }
+  parent();
+//  console.log(name); // i am global
+</script>
