@@ -1,0 +1,47 @@
+<script>
+ // nav -> object ... <nav id="my-nav" style="color: red"> menu... </nav>
+  var nav = {
+    //properties
+    id:"main-navigation",
+    style: {
+      color: "red",
+      border: "1px solid black",
+      margin: "20px"
+    },
+    content: {
+      href: "/about.html",
+      text: "About Us"
+    },
+    // methods
+    render: function () { //dlea otobrajenia
+      document.write(`
+        <nav id=${this.id}>
+          <a href=${this.content.href} style="color:${this.style.color}; border:${this.style.border}">
+            ${this.content.text}
+          </a>
+        </nav>`)
+    },
+  };
+  // alert(nav.style.margin);
+  nav.render();
+
+
+
+  // var car = {
+  //   // properties
+  //   brand: "BMW",
+  //   kuzov: "Sedan",
+  //   volume: 4.5,
+  //   bitaia: true,
+  //   // methods
+  //   beep: function(){
+  //     alert("Beeep Beeep!")
+  //   }
+  // };
+  // //dynamic - можно менять, удалять свойства
+  // car.volume++;
+  // car.owner = "Bah Ma Vezi"; // добавление нового св-ва
+  // delete car.kuzov;
+  // // alert(car.brand);
+  // console.log(car);
+</script>
