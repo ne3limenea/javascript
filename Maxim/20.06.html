@@ -1,0 +1,31 @@
+<script>
+// es5 function() -> template(CLASS)
+// es6+ --> c++   -> template(CLASS)
+//declare a CLASS
+  class User{
+    //sctructure
+    constructor(email,login,avatar,pass){ // method
+      this.email=email;
+
+      this.login=login; //Prototype otnositsea k new user
+      this.avatar=avatar;
+      if(pass == undefined){
+        this.pass = "123123";
+      }else{
+        this.pass=pass;
+      }
+    }
+    render(){
+      document.write(`<h2>${this.login}</h2>`);
+      document.write(`<h2>${this.email}</h2>`);
+      document.write(`<h2><img src=${this.avatar}></h2>`);
+    }
+  }
+  // using the CLASS
+  var user1=new User("aaaa.gmail.com","iurik77","https://picsum.photos/200/200/?image=823","111111");//creates new object//zakaz novogo usera
+  var user2=new User("bbbb.gmail.com","murik88");//creates new object
+  // console.log(user1);
+  // console.log(user2);
+  user1.render();
+  user2.render();
+</script>
