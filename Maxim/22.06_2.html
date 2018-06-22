@@ -1,0 +1,42 @@
+<script>
+  // base class базовый  или суперкласс
+  class Car{
+    //structure
+    //brand,model,year,power,photo !!!!!!!!!!!!
+    constructor(){
+      this.brand = "Mercedes";
+    }
+    about(){
+      alert(`This is a ${this.brand} CAR!!!`);
+    }
+    render(){
+      // -> to HTML
+    }
+  }
+  // extended class
+  class SportCar extends Car{
+    // acceleration
+    // about(){
+    //   alert("This is a SPORTCAR!!!");
+    // }
+    render() !!!!!
+  }
+  /////////////////// creating objects
+  var c = new Car();
+      c.about();
+  var sc= new SportCar();
+      sc.about();
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
