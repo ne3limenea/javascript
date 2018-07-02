@@ -1,0 +1,8 @@
+#carousel div{
+  float: left;
+  width: 33%;
+}
+
+#carousel img{
+  width: 100%;
+}
