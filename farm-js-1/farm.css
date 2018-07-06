@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gamecontainer {
+    display: inline-block;
+    position: relative;
+}
+
+#farm {
+    height: 50px;
+    border-bottom: 5px solid #008000;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#farm .box {
+    border: 1px solid #cdc;
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+#farm .box:hover {
+    cursor: pointer
+}
+
+.active,
+#farm .box:hover {
+    background-color: #ffd700;
+}
+
+.corn {
+    background-image: url(corn.png);
+}
+
+.potato {
+    background-image: url(potato.png);
+}
+
+.tomato {
+    background-image: url(tomato.png);
+}
+
+button {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0 0 0 4px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #c4c4c4;
+    color: #000;
+}
+
+button[onclick="clearMap();"],
+button[onclick="clearSelection();"] {
+    padding: 4px;
+    font-size: 10px;
+    margin-top: 12px;
+}
+
+button[onclick="clearSelection();"] {
+    margin-left: 46px;
+}
+
+button[onclick="calcProfit();"] {
+    background-color: #ffd700;
+    margin-left: 96px;
+    position: absolute;
+    right: 5px;
+}
+
+button[onclick="calcProfit();"]:hover {
+    background-color: #efcb00;
+}
