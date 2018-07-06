@@ -5,9 +5,18 @@
 // 3 - tomato
 var farm_map = [2,2,3,1,1,3,2,3,3,0];
 var farm_div = document.getElementById('farm');
-
+var prices   = {
+  corn:   15,
+  potato: 5,
+  tomato: 10
+};
+// new button to check SUM of prices
 function plantCorn(){
-  farm_map[9] = 1;
+  var cell = prompt("vvedite cell")
+  //если свободен сработает, если нет выдать ошибку
+  // не больше 10 ячеек поставить ограничение 10 ячеек
+  //
+  farm_map[cell-1] = 1;
   showMap();
 }
 function plantPotato(){
