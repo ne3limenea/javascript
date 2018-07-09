@@ -1,0 +1,42 @@
+#map{
+    width: 500px;
+    height: 500px;
+    border: 5px solid green;
+}
+#map div{
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgreen;
+    float: left;
+}
+#map .player{
+    background-image: url(imgs/in8.png);
+    
+}
+#map .coin{
+    background-image: url(imgs/c2.png);
+}
+#map .bomb{
+    background-image: url(imgs/b2.png);
+}
+#map .wall{
+    background-image: url(imgs/w4.png); 
+}
+#map .heart{
+    background-image: url(imgs/h6.png);   
+}
+#map .monster{
+    background-image: url(imgs/mo5.png);   
+}
+#map .queen{
+    background-image: url(imgs/q7.png);   
+}
+#map .rich{
+    background-image: url(imgs/bm8.png);   
+}
+#map .mega-heart{
+    background-image: url(imgs/bh9.png);   
+}
+#map .flag{
+    background-image: url(imgs/fl.png);   
+}
