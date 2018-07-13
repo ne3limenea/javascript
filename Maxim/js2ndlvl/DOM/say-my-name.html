@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DOM EXAMPLE</title>
+  <title>DOM example</title>
 </head>
 <body>
+
   <input type="text" placeholder="your name pls...">
   <button onclick="say();">SAY IT!</button>
   <div id="message">
+
   </div>
   <script>
-    function say(){
+    function say() {
+      // 1) находим 1 инпут и запоминаем его в селектор
       var input = document.body.firstElementChild;
+      //        = document.querySelector('input');
+      // input.type = 'color';
+
+      // копируем значение из инпута в значение name
       var name = input.value;
       var div = document.getElementById('message');
-      if( name == "" || name == " " ){
-        alert("Enter your name!");
-        input.style.border = '1px solid red';
-      }else{
         div.innerHTML = `Hello, ${name}!`;
-        input.style.border = '1px solid #aaa';
-      }
+      // alert(input.value);
     }
   </script>
 </body>

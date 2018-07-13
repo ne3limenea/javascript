@@ -35,15 +35,46 @@
     document.getElementById('my-id') -> Object / null
     document.getElementsByClassName('my-class') -> [Objects] / []
     document.getElementsByTagName('ul') -> [Objects] / []
+
     // NEW
     document.querySelector('css formula')
       -> Object (first)/ null
     document.querySelectorAll('css formula')
       -> [Objects] / []
+      ////////////////////////////////////////////////////////////////////
 
+    // standard: .id, .src, .href, .value, .title
 
+    // .className -> String
+    div.className = `col` // -><div class="col">
+    div.className = `col wide` // -><div class="col wide">
 
+    // .classList -> Collection
+    div.classList.add('wide')
+    div.classList.remove('col')
 
+    //.style
+    div.style.color = 'green';
+    div.style.borderRadius = '10px'; // !!!!!! с большой буквы
+    div.style.borderTopWidth = '10px'; // !!!!!! с большой буквы
+
+    // non-standard
+    .getAttribute('id') // .id
+    .setAttribute('id','value')
+    .removeAttribute('id')
+
+    div.innerHTML = '<div class="my-class"> <input type="checkbox" /></div>'
+    // NOT Professional
+    div.innerHTML = '<div class="my-class"> <input type="checkbox" /> <div></div> </div>'
+    // Professional
+    document.createElement('tag') // -> object `<tag></tag>`
+    parent.appendChild( obj )
+    parent.insertBefore( obj, ref_obj )
+    parent.removeChild( obj )
+    parent.replaceChild( new_obj, old_obj )
+    //.cloneNode()
+    //parent.contains( child_obj )
+    //.hasChildNodes()
   </script>
 </body>
 </html>
