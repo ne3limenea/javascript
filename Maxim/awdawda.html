@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM EXAMPLE</title>
+</head>
+<body>
+  <input type="text" placeholder="your name pls...">
+  <button onclick="say();">SAY IT!</button>
+  <div id="message">
+  </div>
+  <script>
+    function say(){
+      var input = document.body.firstElementChild;
+      var name = input.value;
+      var div = document.getElementById('message');
+      if( name == "" || name == " " ){
+        alert("Enter your name!");
+        input.style.border = '1px solid red';
+      }else{
+        div.innerHTML = `Hello, ${name}!`;
+        input.style.border = '1px solid #aaa';
+      }
+    }
+  </script>
+</body>
+</html>
