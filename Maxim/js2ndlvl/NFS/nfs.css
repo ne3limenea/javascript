@@ -30,15 +30,17 @@
 .light{
   width: 0px;
   height: 0px;
-  border-top: 200px solid rgba(249, 249, 249, 0.50);
-  border-right: 33px solid transparent;
-  border-left: 33px solid transparent;
+  border-top: 100px solid rgba(200, 150, 50, 0.50);
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
   position: absolute;
+  mix-blend-mode: exclusion;
 }
 .light:first-child{
-  top: -160px;
+  top: -60px;
+  left: 13px;
 }
 .light:last-child{
-  top: -160px;
-  left: 66px;
+  top: -60px;
+  left: 76px;
 }

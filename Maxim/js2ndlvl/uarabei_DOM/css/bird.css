@@ -1,0 +1,14 @@
+.bird{
+  width: 48px;
+  height: 48px;
+  border: 1px solid white;
+}
+.bird.red{
+  background-image: url(../img/bird_red.png);
+}
+.bird.green{
+  background-image: url(../img/bird_green.png);
+}
+.bird.yellow{
+  background-image: url(../img/bird_yellow.png);
+}
