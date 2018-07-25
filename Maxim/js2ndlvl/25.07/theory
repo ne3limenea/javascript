@@ -1,0 +1,22 @@
+HTTP
+
+server --( HTTP / internet )--> client
+S<---- Request
+  dialog
+S----> Response
+
+
+  DATA + HEADERS
+
+
+  habr HTTP
+
+/////////////////////////////////////////////////
+
+
+AJAX
+  --> технология в браузере, дает возможность JS подгружать данные не перезагружая страницу
+удобство
+скорость
+
+Fetch API, ws, comet(ajax)

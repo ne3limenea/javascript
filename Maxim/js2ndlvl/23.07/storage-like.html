@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="like();">Like</button>
+
+  <script type="text/javascript">
+    var likes= +localStorage.getItem('liked');
+    var h1 = document.createElement('h1')
+
+    function like(){
+      likes++;
+      localStorage.setItem('liked',likes);
+      if(likes >= 1){
+        
+        // h1 likes
+        // likes - button      <button> 20 likes </button>
+
+      }
+    }
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
