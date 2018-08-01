@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Hierarchy Example</title>
+</head>
+<body>
+
+  <h1><i>DOM</i> <small>Hierarchy Example</small></h1>
+  <h2>Some Tips</h2>
+  <ul>
+    <li>.parentElement</li>
+    <li>.previousElementSibling</li>
+    <li>.nextElementSibling</li>
+    <li>.children[]</li>
+    <li>.firstElemenetChild</li>
+    <li>.lastElemenetChild</li>
+  </ul>
+
+  <script>
+    // 1) read content of h2  .innerHTML
+    document.body.children[1].innerHTML
+    document.body.firstElementChild.nextElementSibling.innerHTML
+    // 2) read content of <i>
+    document.body.firstElementChild.firstElementChild.innerHTML
+    document.body.children[0].children[0].innerHTML
+    // 3) read content of <li> - 5th
+    document.body.children[2].lastElementChild.previousElementSibling.innerHTML
+    document.body.children[2].children[4].innerHTML
+    //-long code
+    //-not dynamic
+    //+speed
+
+    // OLD
+    document.getElementById('my-id') -> Object / null
+    document.getElementsByClassName('my-class') -> [Objects] / []
+    document.getElementsByTagName('ul') -> [Objects] / []
+
+    // NEW
+    document.querySelector('css formula')
+      -> Object (first)/ null
+    document.querySelectorAll('css formula')
+      -> [Objects] / []
+      ////////////////////////////////////////////////////////////////////
+
+    // standard: .id, .src, .href, .value, .title
+
+    // .className -> String
+    div.className = `col` // -><div class="col">
+    div.className = `col wide` // -><div class="col wide">
+
+    // .classList -> Collection
+    div.classList.add('wide')
+    div.classList.remove('col')
+
+    //.style
+    div.style.color = 'green';
+    div.style.borderRadius = '10px'; // !!!!!! с большой буквы
+    div.style.borderTopWidth = '10px'; // !!!!!! с большой буквы
+
+    // non-standard
+    .getAttribute('id') // .id
+    .setAttribute('id','value')
+    .removeAttribute('id')
+
+    div.innerHTML = '<div class="my-class"> <input type="checkbox" /></div>'
+    // NOT Professional
+    div.innerHTML = '<div class="my-class"> <input type="checkbox" /> <div></div> </div>'
+    // Professional
+    document.createElement('tag') // -> object `<tag></tag>`
+    parent.appendChild( obj )
+    parent.insertBefore( obj, ref_obj )
+    parent.removeChild( obj )
+    parent.replaceChild( new_obj, old_obj )
+    //.cloneNode()
+    //parent.contains( child_obj )
+    //.hasChildNodes()
+  </script>
+</body>
+</html>

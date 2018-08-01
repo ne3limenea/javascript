@@ -1,0 +1,3 @@
+2d graphics
+   - raster - matrix of pixels(минимальная точка характеризующуюся одним цветом) мозайка - photos(jpg,png,gif)
+   - vector - coordinates + formulas, // text, logo, icon, deco - svg
